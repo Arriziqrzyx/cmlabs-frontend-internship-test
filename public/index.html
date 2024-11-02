@@ -3,10 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MealWise</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-  <body>
-    <h1 class="text-5xl font-semibold">Hello World</h1>
+  <body
+    class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-gray-200"
+  >
+    <!-- Navbar -->
+    <header class="bg-white shadow-lg dark:bg-gray-800">
+      <div class="flex items-center justify-between px-6 md:px-16 py-3">
+        <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+          MealWise
+        </a>
+        <nav
+          class="hidden md:flex items-center space-x-8 text-gray-600 dark:text-gray-400"
+        >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Home</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Foods</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Ingredients</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Local Culinary</a
+          >
+          <button
+            class="theme-toggle bg-gray-200 rounded-full px-2 py-1 hover:bg-gray-300 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+          >
+            <i
+              class="theme-icon fas fa-sun text-gray-600 dark:text-gray-300"
+            ></i>
+          </button>
+        </nav>
+
+        <!-- Humburger Menu Button -->
+        <div class="md:hidden">
+          <button
+            id="menu-button"
+            class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+          >
+            <i class="fas fa-bars w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Humburger Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg dark:bg-gray-800"
+      >
+        <nav
+          class="flex flex-col space-y-2 py-4 px-6 text-gray-600 dark:text-gray-400"
+        >
+          <div class="flex justify-start">
+            <button
+              class="theme-toggle bg-gray-200 rounded-full px-2 py-1 hover:bg-gray-300 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+            >
+              <i
+                class="theme-icon fas fa-sun text-gray-600 dark:text-gray-300"
+              ></i>
+            </button>
+          </div>
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Home</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Foods</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Ingredients</a
+          >
+          <a href="#" class="hover:text-blue-500 dark:hover:text-gray-300"
+            >Local Culinary</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col items-center text-center py-16 md:py-20 bg-gray-200 dark:bg-gray-700"
+    >
+      <div
+        class="flex space-x-4 md:space-x-6 mb-4 md:mb-6 text-3xl md:text-4xl text-blue-600 dark:text-blue-400"
+      >
+        <i class="fas fa-utensils"></i>
+        <i class="fas fa-carrot"></i>
+        <i class="fas fa-apple-alt"></i>
+      </div>
+      <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-2">
+        MealApp API Website
+      </p>
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">
+        Be wise in choosing food
+      </h1>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow px-6 md:px-16 py-10">
+      <div class="text-center text-gray-600 dark:text-gray-400 text-lg">
+        Content
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-200 text-gray-600 text-center py-4 dark:bg-gray-800 dark:text-gray-400"
+    >
+      <p>&copy; 2024 MealWise. All rights reserved.</p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
   </body>
 </html>

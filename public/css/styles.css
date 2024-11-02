@@ -1,0 +1,41 @@
+body {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  color: #000;
+}
+
+body.dark {
+  background-color: #18202a; /* bg-gray-900 */
+  color: #fff;
+}
+
+.slide-down {
+  animation: slideDown 0.5s forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s forwards;
+}
+
+#mobile-menu {
+  overflow: hidden;
+  max-height: 0;
+}
+
+/* Keyframes untuk animasi slide */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 300px;
+  }
+  to {
+    max-height: 0;
+  }
+}
