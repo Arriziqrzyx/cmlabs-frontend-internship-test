@@ -24,7 +24,7 @@ axios
 
       // Elemen anchor untuk navigasi
       const categoryLink = document.createElement("a");
-      categoryLink.href = `category-detail.html?category=${category.strCategory}`;
+      categoryLink.href = `category-detail.html?category-name=${category.strCategory}`;
       categoryLink.classList.add("block");
 
       // gambar kategori

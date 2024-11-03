@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MealWise</title>
+    <title>Meal Wise</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -13,10 +13,12 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body
-    class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-gray-200"
+    class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-gray-200 transition-all"
   >
     <!-- Navbar -->
-    <header class="bg-white shadow-lg dark:bg-gray-800">
+    <header
+      class="fixed top-0 w-full bg-white shadow-lg dark:bg-gray-800 transition-all z-50"
+    >
       <div class="flex items-center justify-between px-6 md:px-16 py-3">
         <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
           MealWise
@@ -59,7 +61,7 @@
       <!-- Humburger Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-white shadow-lg dark:bg-gray-800"
+        class="hidden md:hidden bg-white shadow-lg dark:bg-gray-800 transition-all"
       >
         <nav
           class="flex flex-col space-y-2 py-4 px-6 text-gray-600 dark:text-gray-400"
@@ -91,7 +93,7 @@
 
     <!-- Hero Section -->
     <section
-      class="flex flex-col items-center text-center py-16 md:py-20 bg-gray-200 shadow-sm dark:bg-gray-700"
+      class="flex flex-col items-center text-center py-16 mt-14 md:py-20 bg-gray-200 shadow-sm dark:bg-gray-700 transition-all"
     >
       <div
         class="flex space-x-4 md:space-x-6 mb-4 md:mb-6 text-3xl md:text-4xl text-blue-600 dark:text-blue-400"
@@ -118,7 +120,7 @@
 
     <!-- Footer -->
     <footer
-      class="bg-gray-200 text-gray-600 text-center mt-8 py-4 dark:bg-gray-800 dark:text-gray-400"
+      class="bg-gray-200 text-gray-600 text-center mt-8 py-4 dark:bg-gray-800 dark:text-gray-400 transition-all"
     >
       <p>&copy; 2024 MealWise. All rights reserved.</p>
     </footer>
