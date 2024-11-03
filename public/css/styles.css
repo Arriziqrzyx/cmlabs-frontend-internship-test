@@ -21,6 +21,28 @@ body.dark {
   max-height: 0;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pb-[56.25%] {
+  padding-bottom: 56.25%;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /* Keyframes untuk animasi slide */
 @keyframes slideDown {
   from {
